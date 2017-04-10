@@ -1,0 +1,27 @@
+#about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.m__section-about-text {
+  width: 40%;
+}
+
+.m__section-about-image {
+  width: 50%;
+}
+
+.m__section-about-image img {
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#reservations {
+  padding-top: 100px;
+}

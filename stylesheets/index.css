@@ -14,6 +14,7 @@ nav#m__nav {
   justify-content: center;
   align-items: center;
   background-color: white;
+  z-index: 1000;
 }
 
 nav#m__nav.stuck {
@@ -129,7 +130,14 @@ iframe {
 
   header h1 {
     margin: 20px;
+    font-size: 30px;
   }
+
+  nav a {
+    margin: 0px 10px;
+    font-size: 12px;
+  }
+
   footer {
     padding: 20px;
   }

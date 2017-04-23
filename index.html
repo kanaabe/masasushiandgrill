@@ -25,9 +25,10 @@
 
     <nav id="m__nav">
       <a href="#about">ABOUT</a>
-      <a href="#menu">MENU</a>
-      <a href="#reservations">RESERVATIONS</a>
-      <a href="#locationcontact">LOCATION &amp; CONTACT</a>
+      <a href="/assets/pdfs/menu.pdf">MENU</a>
+      <a href="/assets/pdfs/takeout.pdf">TAKEOUT</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#reservations">INFO &amp; RESERVATIONS</a>
     </nav>
 
     <main>
@@ -48,21 +49,34 @@
           </p>
         </div>
         <div class="m__section-about-image">
-          <img src="assets/images/omakase.jpg"></img>
+          <img src="assets/images/sushi.jpg"></img>
         </div>
       </section>
-      <section id="menu">
-        <h2>Social</h2>
-          <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c0aa87a1e7bb5ab3badb393a8bb4b8dd.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-<!--         <div>
-          <img class="m__platter-img" src="assets/images/sushiplatter.jpg"></img>
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="m__section-gallery grid">
+          <img class="grid-item" src="assets/images/2.jpg"></img>
+          <img class="grid-item" src="assets/images/3.jpg"></img>
+          <img class="grid-item" src="assets/images/4.jpg"></img>
+          <img class="grid-item" src="assets/images/5.jpg"></img>
+          <img class="grid-item" src="assets/images/6.jpg"></img>
+          <img class="grid-item" src="assets/images/7.jpg"></img>
+          <img class="grid-item" src="assets/images/8.jpg"></img>
+          <img class="grid-item" src="assets/images/9.jpg"></img>
+          <img class="grid-item" src="assets/images/10.jpg"></img>
+          <img class="grid-item" src="assets/images/11.jpg"></img>
+          <img class="grid-item" src="assets/images/12.jpg"></img>
+          <img class="grid-item" src="assets/images/13.jpg"></img>
+          <img class="grid-item" src="assets/images/1.jpg"></img>
+          <img class="grid-item" src="assets/images/14.jpg"></img>
+          <img class="grid-item" src="assets/images/15.jpg"></img>
+          <img class="grid-item" src="assets/images/16.jpg"></img>
+          <img class="grid-item" src="assets/images/17.jpg"></img>
+          <img class="grid-item" src="assets/images/19.jpg"></img>
+          <img class="grid-item" src="assets/images/18.jpg"></img>
+          <img class="grid-item" src="assets/images/20.jpg"></img>
+          <img class="grid-item" src="assets/images/21.jpg"></img>
         </div>
-        <div>
-          <img class="m__platter-img" src="assets/images/rollplatter.jpg"></img>
-        </div>
-        <div>
-          <img class="m__platter-img" src="assets/images/smallrollplatter.jpg"></img>
-        </div> -->
       </section>
 
       <section id="reservations">
@@ -115,17 +129,21 @@
       </div>
     </footer>
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- // <script src="js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script>
       var sticky = new Waypoint.Sticky({
         element: $('nav#m__nav')[0]
       })
+      $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 33,
+        gutter: 10,
+        percentPosition: true
+      });
     </script>
   </body>
 </html>

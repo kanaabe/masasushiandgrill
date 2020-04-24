@@ -9,13 +9,33 @@
     <link rel="stylesheet" href="stylesheets/sections.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:500|Sanchez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Sanchez&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <nav id="m__nav">
+      <a class="sticky-order-button" href="https://www.makeitbutter.com/masa-sushi-grill">ORDER ONLINE</a>
+      <div class="m__nav-list">
+        <a href="#about">ABOUT</a>
+        <a href="/assets/pdfs/dinner.pdf">DINNER MENU</a>
+        <a href="/assets/pdfs/lunch.pdf">LUNCH MENU</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#reservations">INFO &amp; RESERVATIONS</a>
+      </div>
+    </nav>
 
-    <div class="m__hero-background"></div>
-    <div class="m__hero-img"></div>
+    <div class="m__hero">
+
+      <div class="m__hero-img">
+      </div>
+      <div class="m__hero-background">
+      </div>
+      <div class="alert-box">
+        <p>
+          We will be temporarily closed on <b style="color: red;">SUNDAY 4/26 and 5/3</b>.<br />We apologize for the inconvenience.
+        </p>
+      </div>
+    </div>
 
     <header>
       <h1>masa sushi and grill</h1>
@@ -23,23 +43,12 @@
       <h2><a href="tel:201-934-6616">201-934-6616</a></h2>
     </header>
 
-    <nav id="m__nav">
-      <a href="#about">ABOUT</a>
-      <a href="/assets/pdfs/menu.pdf">MENU</a>
-      <a href="/assets/pdfs/takeout.pdf">TAKEOUT</a>
-      <a href="#gallery">GALLERY</a>
-      <a href="#reservations">INFO &amp; RESERVATIONS</a>
-    </nav>
 
     <main>
       <section id="about">
         <div class="m__section-about-text">
           <p>
-            Masa Sushi and Grill opened its doors in March 2004.  We specialize in quality sushi, sashimi and small single item appetizers utilizing seasonal local ingredients as well as seafood from all over the world. Although Masa holds true to tradition, our food selections and special menu items are the most unique of all the other Japanese style restaurants in New York and New Jersey. Our daily specials always bring new and exciting experiences for our guests. As quoted by Elisa Ung from THE RECORD, “ I began eating my Omakase sushi platter at Masa in Allendale and instantly trusted chef/owner Masahiro Abe, who had delicately laid out some of the most extraordinary sushi I have seen outside of Japan.”
-          </p>
-
-          <p>
-            Over the years, our staff has become acquainted with many guests who we now know well and greet on a first name basis. We want new guests to feel just as welcome and hope they become regulars, like Rich who likes Snapper seared with Ponzu or Doreen who wants her Sashimi with cold Sake.
+            Masa Sushi and Grill opened its doors in March 2004.  We specialize in quality sushi, sashimi, appetizers and full kitchen entrées utilizing seasonal local ingredients as well as seafood from all over the world.
           </p>
           <p>
             FRESH, UNIQUE, &amp; AT-HOME, is what you can expect at Masa Sushi and Grill.
@@ -72,9 +81,6 @@
           <img class="grid-item" src="assets/images/15.jpg"></img>
           <img class="grid-item" src="assets/images/16.jpg"></img>
           <img class="grid-item" src="assets/images/17.jpg"></img>
-          <img class="grid-item" src="assets/images/19.jpg"></img>
-          <img class="grid-item" src="assets/images/18.jpg"></img>
-          <img class="grid-item" src="assets/images/20.jpg"></img>
           <img class="grid-item" src="assets/images/21.jpg"></img>
         </div>
       </section>
@@ -108,8 +114,13 @@
               <td></td>
               <td>5:00PM - 10:30PM</td>
             </tr>
+            <tr>
               <td>Sunday</td>
               <td>5:00PM - 9:30PM</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CLOSED 4/26 and 5/3</td>
             </tr>
           </table>
         </div>
@@ -131,19 +142,6 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script>
-      var sticky = new Waypoint.Sticky({
-        element: $('nav#m__nav')[0]
-      })
-      $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 33,
-        gutter: 10,
-        percentPosition: true
-      });
-    </script>
   </body>
 </html>

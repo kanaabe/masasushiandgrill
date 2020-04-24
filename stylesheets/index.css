@@ -1,5 +1,5 @@
 * {
-  font-family: 'Sanchez', 'Helvetica', serif;
+  font-family: "Sanchez", "Helvetica", serif;
 }
 
 body {
@@ -7,14 +7,17 @@ body {
 }
 
 nav#m__nav {
-  height: 50px;
+  height: 100px;
   width: 100vw;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: white;
   z-index: 1000;
+  position: sticky;
+  top: 0;
 }
 
 nav#m__nav.stuck {
@@ -25,45 +28,80 @@ nav#m__nav.stuck {
 
 nav a {
   color: black;
-  font-family: 'Poppins', 'Helvetica', sans-serif;
+  font-family: "Poppins", "Helvetica", sans-serif;
   font-weight: bold;
   margin: 0px 20px;
+  text-align: center;
+}
+
+.m__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.sticky-order-button {
+  width: 100vw;
+  padding: 15px;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  text-decoration: underline;
 }
 
 body header {
   position: absolute;
-  top: 0;
+  top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 50px);
+  height: 500px;
   width: 100%;
+  color: white;
 }
 
 header h1 {
   font-size: 40px;
-  font-family: 'Poppins', 'Helvetica', sans-serif;
-  color: white;
+  font-family: "Poppins", "Helvetica", sans-serif;
 }
 
 header h2 {
   font-size: 18px;
-  color: white;
 }
 
-header h2 a {
-  color: white;
+.m__hero {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+}
+
+.alert-box {
+  position: absolute;
+  bottom: 0;
+  background-color: #f5d282;
+  width: 100vw;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.alert-box p {
+  max-width: 450px;
+  margin: auto;
 }
 
 .m__hero-img {
-  background: url(../assets/images/omakase.jpg) no-repeat center center fixed;
+  position: absolute;
+  background: url(../assets/images/omakase.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100vw;
-  height: calc(100vh - 50px);
+  height: 500px;
+  top: 0;
 }
 
 .m__hero-background {
@@ -72,10 +110,11 @@ header h2 a {
   -o-background-size: cover;
   background-size: cover;
   width: 100vw;
-  height: calc(100vh - 50px);
+  height: 500px;
   background-color: black;
   opacity: 0.3;
   position: absolute;
+  top: 0;
 }
 
 main {
@@ -110,7 +149,8 @@ footer {
   margin: auto;
 }
 
-footer td, footer p {
+footer td,
+footer p {
   color: white;
 }
 
@@ -127,6 +167,9 @@ iframe {
 /* Responsive Styles */
 
 @media (max-width: 600px) {
+  main {
+    padding: 0 30px 30px 30px;
+  }
 
   header h1 {
     margin: 20px;

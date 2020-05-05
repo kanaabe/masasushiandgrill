@@ -91,6 +91,20 @@ header h2 {
   margin: auto;
 }
 
+.alert-box table {
+  margin: auto;
+}
+
+.alert-box table,
+.alert-box table th,
+.alert-box table td {
+  border: 1px solid #939393;
+}
+
+.alert-box table td {
+  padding: 5px;
+}
+
 .m__hero-img {
   position: absolute;
   background: url(../assets/images/omakase.jpg) no-repeat center;

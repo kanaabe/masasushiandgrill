@@ -7,7 +7,7 @@ body {
 }
 
 nav#m__nav {
-  height: 100px;
+  height: auto;
   width: 100vw;
   margin: auto;
   display: flex;
@@ -30,8 +30,9 @@ nav a {
   color: black;
   font-family: "Poppins", "Helvetica", sans-serif;
   font-weight: bold;
-  margin: 0px 20px;
   text-align: center;
+  white-space: nowrap;
+  padding: 15px 15px;
 }
 
 .m__nav-list {
@@ -39,6 +40,7 @@ nav a {
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+  flex-flow: wrap;
 }
 
 .sticky-order-button {
@@ -190,7 +192,6 @@ iframe {
   }
 
   nav a {
-    margin: 0px 10px;
     font-size: 12px;
   }
 

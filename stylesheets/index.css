@@ -109,7 +109,8 @@ header h2 {
 
 .m__hero-img {
   position: absolute;
-  background: url(../assets/images/omakase.jpg) no-repeat center;
+  background: url("https://d3mhjd3lwvu2i0.cloudfront.net/masa/omakase.jpeg")
+    no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
